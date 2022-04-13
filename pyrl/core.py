@@ -26,8 +26,8 @@ class ActionSpace(Collection[Action]):
     pass
 
 
-TransitionDynamic: = Callable[[State, Action], float, State]
-Policy:            = Callable[[State], Action]
+TransitionDynamic = Callable[[State, Action], float, State]
+Policy            = Callable[[State], Action]
 
 
 class Environment(Protocol):
