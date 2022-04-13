@@ -3,7 +3,6 @@ from __future__ import annotations
 from typing import Protocol
 from typing import Tuple, Collection
 from typing import Hashable, Callable
-from typing import TypeAlias
 
 
 class State(Hashable):
@@ -27,8 +26,8 @@ class ActionSpace(Collection[Action]):
     pass
 
 
-TransitionDynamic:   TypeAlias = Callable[[State, Action], float, State]
-Policy:              TypeAlias = Callable[[State], Action]
+TransitionDynamic: = Callable[[State, Action], float, State]
+Policy:            = Callable[[State], Action]
 
 
 class Environment(Protocol):
