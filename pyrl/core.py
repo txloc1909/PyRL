@@ -12,7 +12,7 @@ class State(Hashable):
         pass
 
 
-class StateSpace(Collection[Space]):
+class StateSpace(Collection[State]):
 
     def init_state(self) -> State:
         pass
